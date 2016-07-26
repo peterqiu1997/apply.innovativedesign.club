@@ -5,28 +5,20 @@
   position: relative;
   padding: 0;
   margin: 0;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .application__wrapper {
   padding: 20px 5%;
-  font-family: 'Roboto';
-
-  .title {
+  font-family: 'Roboto'; }
+  .application__wrapper .title {
     text-align: center;
-    margin-top: 20px;
-  }
-
-  .subtitle {
+    margin-top: 20px; }
+  .application__wrapper .subtitle {
     padding: 5px;
-    text-align: center;
-  }
-
-  .intro {
+    text-align: center; }
+  .application__wrapper .intro {
     padding: 20px;
     width: 80%;
     margin: 0 auto;
     font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
+    line-height: 1.75rem; }
