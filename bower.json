@@ -1,0 +1,19 @@
+{
+  "name": "y",
+  "homepage": "https://github.com/jubearsun/apply.innovativedesign.club",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "Julia Sun"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
