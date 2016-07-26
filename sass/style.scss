@@ -8,22 +8,83 @@
   z-index: 1;
 }
 
+// Color Pallette
+$red: #F44336;
+$pink: #E91E63;
+$purple: #9C27B0;
+$deep-purple: #673AB7;
+$indigo: #3F51B5;
+$blue: #0693C0;
+$light-blue: #03A9F4;
+$cyan: #00BCD4;
+$teal: #009688;
+$green: #4CAF50;
+$light-green: #8BC34A;
+$lime: #CDDC39;
+$yellow: #FBD133;
+$amber: #FFC107;
+$orange: #FF9800;
+$deep-orange: #FF5722;
+$brown: #795548;
+$grey: #BDBDBD;
+$light-grey: #ebebeb;
+$blue-grey: #607D8B;
+$black: #333333;
+$white: #FDFDFD;
+
 .application__wrapper {
   padding: 20px 5%;
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
+  color: rgba(0, 0, 0, 0.8);
+
+  a {
+    text-decoration: none;
+    color: $blue;
+    transition: color 250ms;
+
+    &:hover {
+      color: darken($blue, 15%);
+    }
+  }
+
+  .image__wrapper {
+    margin-top: 20px;
+
+    ul.image__list {
+      font-size: 0;
+
+      li.image {
+        font-size: 0;
+        width: 32%;
+        margin-right: 2%;
+        display: inline-block;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
 
   .title {
     text-align: center;
     margin-top: 20px;
+    background: url(/logo-type.png) no-repeat center center;
+    background-size: contain;
+    height: 100px;
+    width: auto;
   }
 
   .subtitle {
-    padding: 5px;
+    margin-top: 20px;
     text-align: center;
   }
 
   .intro {
-    padding: 20px;
     width: 80%;
     margin: 0 auto;
     font-size: 1.25rem;

@@ -9,15 +9,38 @@
 
 .application__wrapper {
   padding: 20px 5%;
-  font-family: 'Roboto'; }
+  font-family: 'Open Sans';
+  color: rgba(0, 0, 0, 0.8); }
+  .application__wrapper a {
+    text-decoration: none;
+    color: #0693C0;
+    transition: color 250ms; }
+    .application__wrapper a:hover {
+      color: #045a76; }
+  .application__wrapper .image__wrapper {
+    margin-top: 20px; }
+    .application__wrapper .image__wrapper ul.image__list {
+      font-size: 0; }
+      .application__wrapper .image__wrapper ul.image__list li.image {
+        font-size: 0;
+        width: 32%;
+        margin-right: 2%;
+        display: inline-block; }
+        .application__wrapper .image__wrapper ul.image__list li.image:nth-child(3n) {
+          margin-right: 0; }
+        .application__wrapper .image__wrapper ul.image__list li.image img {
+          max-width: 100%; }
   .application__wrapper .title {
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 20px;
+    background: url(/logo-type.png) no-repeat center center;
+    background-size: contain;
+    height: 100px;
+    width: auto; }
   .application__wrapper .subtitle {
-    padding: 5px;
+    margin-top: 20px;
     text-align: center; }
   .application__wrapper .intro {
-    padding: 20px;
     width: 80%;
     margin: 0 auto;
     font-size: 1.25rem;
