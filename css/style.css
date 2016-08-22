@@ -32,16 +32,43 @@
           max-width: 100%; }
   .application__wrapper .title {
     text-align: center;
-    margin-top: 20px;
+    margin: 64px 0;
     background: url(/logo-type.png) no-repeat center center;
     background-size: contain;
     height: 100px;
     width: auto; }
   .application__wrapper .subtitle {
-    margin-top: 20px;
+    margin: 48px 0;
     text-align: center; }
   .application__wrapper .intro {
     width: 80%;
     margin: 0 auto;
     font-size: 1.25rem;
     line-height: 1.75rem; }
+  .application__wrapper .tiers {
+    margin: 48px 0;
+    text-align: center; }
+    .application__wrapper .tiers .tier {
+      display: inline-block;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      margin-right: 24px;
+      margin-bottom: 24px; }
+      .application__wrapper .tiers .tier.blue {
+        background: #0693C0; }
+      .application__wrapper .tiers .tier.gold {
+        background: #FBD133; }
+      .application__wrapper .tiers .tier.photo {
+        background: #9C27B0; }
+      .application__wrapper .tiers .tier.web {
+        background: #E91E63; }
+      .application__wrapper .tiers .tier.video {
+        background: #4CAF50; }
+      .application__wrapper .tiers .tier .text__overlay {
+        font-size: 18px;
+        font-weight: bold;
+        color: #FDFDFD;
+        top: 50%;
+        transform: translateY(-50%);
+        text-transform: uppercase; }

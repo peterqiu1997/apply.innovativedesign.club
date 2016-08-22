@@ -72,7 +72,7 @@ $white: #FDFDFD;
 
   .title {
     text-align: center;
-    margin-top: 20px;
+    margin: 64px 0;
     background: url(/logo-type.png) no-repeat center center;
     background-size: contain;
     height: 100px;
@@ -80,7 +80,7 @@ $white: #FDFDFD;
   }
 
   .subtitle {
-    margin-top: 20px;
+    margin: 48px 0;
     text-align: center;
   }
 
@@ -89,5 +89,48 @@ $white: #FDFDFD;
     margin: 0 auto;
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .tiers {
+    margin: 48px 0;
+    text-align: center;
+
+    .tier {
+      display: inline-block;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      margin-right: 24px;
+      margin-bottom: 24px;
+
+      &.blue {
+        background: $blue;
+      }
+
+      &.gold {
+        background: $yellow;
+      }
+
+      &.photo {
+        background: $purple;
+      }
+
+      &.web {
+        background: $pink;
+      }
+
+      &.video {
+        background: $green;
+      }
+
+      .text__overlay {
+        font-size: 18px;
+        font-weight: bold;
+        color: $white;
+        top: 50%;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+      }
+    }
   }
 }
