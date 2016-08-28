@@ -32,11 +32,19 @@
           max-width: 100%; }
   .application__wrapper .title {
     text-align: center;
-    margin: 64px 0;
-    height: 100px;
-    width: auto; }
+    width: 40%;
+    margin: 64px auto; }
     .application__wrapper .title img {
-      height: 100%; }
+      width: 100%; }
+    @media (max-width: 900px) {
+      .application__wrapper .title {
+        width: 50%; } }
+    @media (max-width: 670px) {
+      .application__wrapper .title {
+        width: 70%; } }
+    @media (max-width: 400px) {
+      .application__wrapper .title {
+        width: 90%; } }
   .application__wrapper .subtitle {
     margin: 48px 0;
     text-align: center; }
