@@ -33,10 +33,10 @@
   .application__wrapper .title {
     text-align: center;
     margin: 64px 0;
-    background: url("/img/logo-type.png") no-repeat center center;
-    background-size: contain;
     height: 100px;
     width: auto; }
+    .application__wrapper .title img {
+      height: 100%; }
   .application__wrapper .subtitle {
     margin: 48px 0;
     text-align: center; }
