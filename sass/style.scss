@@ -104,45 +104,52 @@ $white: #FDFDFD;
     line-height: 1.75rem;
   }
 
-  .tiers {
+  .button__wrapper {
     margin: 48px 0;
     text-align: center;
 
-    .tier {
-      display: inline-block;
-      height: 300px;
-      width: 300px;
-      border-radius: 50%;
-      margin-right: 24px;
-      margin-bottom: 24px;
+    .info__button {
+      margin-right: 15px;
+      padding: 0.75rem 0.9rem;
+      font-size: 1rem;
+      line-height: 1;
+      background: none;
+      border: 2px solid $blue;
+      border-radius: 4px;
+      overflow: hidden;
+      color: $blue;
+      transition: color 0.2s ease-in;
+      outline: none;
+      user-select: none;
+      text-transform: uppercase;
+      -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: transparent;
 
-      &.blue {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 105%;
+        height: 105%;
+        z-index: -1;
         background: $blue;
+        transition: top 0.25s;
       }
 
-      &.gold {
-        background: $yellow;
-      }
-
-      &.photo {
-        background: $purple;
-      }
-
-      &.web {
-        background: $pink;
-      }
-
-      &.video {
-        background: $green;
-      }
-
-      .text__overlay {
-        font-size: 18px;
-        font-weight: bold;
+      &:hover {
+        cursor: pointer;
         color: $white;
-        top: 50%;
-        transform: translateY(-50%);
-        text-transform: uppercase;
+
+        &::after {
+          top: 0;
+        }
+      }
+
+      @media (max-width: 500px) {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.75rem;
+        margin-bottom: 15px;
       }
     }
   }

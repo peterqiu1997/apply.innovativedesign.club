@@ -53,30 +53,42 @@
     margin: 0 auto;
     font-size: 1.25rem;
     line-height: 1.75rem; }
-  .application__wrapper .tiers {
+  .application__wrapper .button__wrapper {
     margin: 48px 0;
     text-align: center; }
-    .application__wrapper .tiers .tier {
-      display: inline-block;
-      height: 300px;
-      width: 300px;
-      border-radius: 50%;
-      margin-right: 24px;
-      margin-bottom: 24px; }
-      .application__wrapper .tiers .tier.blue {
-        background: #0693C0; }
-      .application__wrapper .tiers .tier.gold {
-        background: #FBD133; }
-      .application__wrapper .tiers .tier.photo {
-        background: #9C27B0; }
-      .application__wrapper .tiers .tier.web {
-        background: #E91E63; }
-      .application__wrapper .tiers .tier.video {
-        background: #4CAF50; }
-      .application__wrapper .tiers .tier .text__overlay {
-        font-size: 18px;
-        font-weight: bold;
-        color: #FDFDFD;
-        top: 50%;
-        transform: translateY(-50%);
-        text-transform: uppercase; }
+    .application__wrapper .button__wrapper .info__button {
+      margin-right: 15px;
+      padding: 0.75rem 0.9rem;
+      font-size: 1rem;
+      line-height: 1;
+      background: none;
+      border: 2px solid #0693C0;
+      border-radius: 4px;
+      overflow: hidden;
+      color: #0693C0;
+      transition: color 0.2s ease-in;
+      outline: none;
+      user-select: none;
+      text-transform: uppercase;
+      -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: transparent; }
+      .application__wrapper .button__wrapper .info__button::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 105%;
+        height: 105%;
+        z-index: -1;
+        background: #0693C0;
+        transition: top 0.25s; }
+      .application__wrapper .button__wrapper .info__button:hover {
+        cursor: pointer;
+        color: #FDFDFD; }
+        .application__wrapper .button__wrapper .info__button:hover::after {
+          top: 0; }
+      @media (max-width: 500px) {
+        .application__wrapper .button__wrapper .info__button {
+          font-size: 0.9rem;
+          padding: 0.5rem 0.75rem;
+          margin-bottom: 15px; } }
