@@ -51,6 +51,7 @@
   .application__wrapper .intro {
     width: 90%;
     margin: 0 auto;
+    text-align: center;
     font-size: 1.25rem;
     line-height: 1.75rem; }
   .application__wrapper .button__wrapper {
